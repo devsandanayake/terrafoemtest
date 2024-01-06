@@ -67,7 +67,7 @@ jobs:
     needs: build
     environment:
       name: 'Development'
-      url: ${{ my-unique-hello-world-app.azurewebsites.net }}
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
     - name: Download artifact from build job
