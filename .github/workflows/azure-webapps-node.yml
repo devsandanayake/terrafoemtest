@@ -67,7 +67,7 @@ jobs:
     - name: Download artifact from build job
       uses: actions/download-artifact@v3
       with:
-        name: node-app
+        name: app.js
 
     - name: 'Deploy to Azure WebApp'
       id: c520b0a6-229a-4627-a145-973021e7c04d
