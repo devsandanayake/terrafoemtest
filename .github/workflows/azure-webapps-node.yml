@@ -94,7 +94,7 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL_ID }}
         password: ${{ secrets.AZURE_SERVICE_PRINCIPAL_PASSWORD }} 
-        tenant: ${{ secrets.AZURE_TENANT_ID }}    
+         
 
     - name: 'Deploy to Azure WebApp'
       id: c520b0a6-229a-4627-a145-973021e7c04d
