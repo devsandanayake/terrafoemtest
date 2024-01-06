@@ -54,6 +54,12 @@ jobs:
         name: app.js
         path: .
 
+    - uses: azure/login@v1
+      with:
+        tenant-id: 480d0b8e-4412-401f-ad71-916d1b8abbca
+        subscription-id: c520b0a6-229a-4627-a145-973021e7c04d
+         
+
   deploy:
     permissions:
       contents: none
